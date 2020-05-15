@@ -42,18 +42,16 @@ iOS: Steps to build app for simulator
 - Link: https://youtu.be/Xnd8fsy3-mY
 - 9:02 - 17:40
 
-- IntelliJ: https://www.jetbrains.com/idea/download/#section=windows
-- Maven: https://maven.apache.org/download.cgi
-
-Cucumber JVM and Cucumber-JUnit dependencies
-============================================
-- https://cucumber.io/docs/installation/java/
-- https://cucumber.io/docs/cucumber/api/#junit
-
+Cucumber
+========
+- Cucumber JVM: https://cucumber.io/docs/installation/java/
+- Ccumber JUnit: https://cucumber.io/docs/cucumber/api/#junit
 - Gherkin basics: https://cucumber.io/docs/gherkin/reference/
 - Step Management: https://cucumber.io/docs/gherkin/step-organization/
 
-- log4j2 configurations (GitHub): https://github.com/omprakashchavan01/log4j2_properties
+Log4J2
+=======
+log4j2 configurations (GitHub): https://github.com/omprakashchavan01/log4j2_properties
 
 Cucumber HTML Reports
 =====================

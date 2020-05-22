@@ -8,7 +8,7 @@ Feature: Login scenarios
     Then login should fail with an error "<err>"
     Examples:
       | username | password | err |
-      | invalidUsername | secret_sauce | saUsername and password do not match any user in this service. |
+      | invalidUsername | secret_sauce | Username and password do not match any user in this service. |
 
   Scenario Outline: Login with invalid password
     When I enter username as "<username>"

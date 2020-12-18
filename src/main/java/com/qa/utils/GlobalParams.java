@@ -68,7 +68,7 @@ public class GlobalParams {
     public void initializeGlobalParams(){
         GlobalParams params = new GlobalParams();
         params.setPlatformName(System.getProperty("platformName", "Android"));
-        params.setUDID(System.getProperty("udid", "<enter_device_udid_here>>"));
+        params.setUDID(System.getProperty("udid", "emulator-5554"));
         params.setDeviceName(System.getProperty("deviceName", "OnePlus"));
 
         switch(params.getPlatformName()){

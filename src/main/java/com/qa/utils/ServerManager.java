@@ -24,7 +24,7 @@ public class ServerManager {
             utils.log().fatal("Appium server not started. ABORT!!!");
             throw new AppiumServerHasNotBeenStartedLocallyException("Appium server not started. ABORT!!!");
         }
-//        server.clearOutPutStreams();
+        server.clearOutPutStreams(); // -> Comment this if you want to see server logs in the console
         this.server.set(server);
         utils.log().info("Appium server started");
     }
@@ -45,9 +45,9 @@ public class ServerManager {
     public AppiumDriverLocalService MacGetAppiumService() {
         GlobalParams params = new GlobalParams();
         HashMap<String, String> environment = new HashMap<String, String>();
-        environment.put("PATH", "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/bin:/Users/Om/Library/Android/sdk/tools:/Users/Om/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin" + System.getenv("PATH"));
-        environment.put("ANDROID_HOME", "/Users/Om/Library/Android/sdk");
-        environment.put("JAVA_HOME", "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home");
+        environment.put("PATH", "enter_your_path_here" + System.getenv("PATH"));
+        environment.put("ANDROID_HOME", "enter_your_android_home_path");
+        environment.put("JAVA_HOME", "enter_your_java_home_path");
         return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
                 .usingDriverExecutable(new File("/usr/local/bin/node"))
                 .withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))

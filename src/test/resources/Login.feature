@@ -16,7 +16,7 @@ Feature: Login scenarios
     And I login
     Then login should fail with an error "<err>"
     Examples:
-      | username | password | err |
+      | username | password | err1 |
       | standard_user | invalidPassword | Username and password do not match any user in this service. |
 
   Scenario Outline: Login with valid user name and password
